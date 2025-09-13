@@ -13,6 +13,17 @@
     --button_background_color:rgba(250, 74, 12, 1);
     --background_last_color:rgba(37, 43, 66, 0.4);
     --background_first_color:rgba(23, 16, 16, 0.6);
+    --main-family:"Montserrat",sans-serif;
+    --second-family:"Poppins",sans-serif;
+    --third-family:"Roboto",sans-serif;
+}
+
+body {
+    font-family: var(--main-family);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.1px;
 }
 
 .container {
@@ -21,9 +32,10 @@
 }
 
 
-.header-logo {
+.header {
     padding-top:50px;
     padding-bottom:42px;
+    font-family: var(--main-family);
 }
 
 .header-link:hover {
@@ -33,7 +45,7 @@
 header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header-list {
@@ -49,10 +61,13 @@ header .container {
 }
 
 .hero {
-    background-color: var(--background_first_color);
-    color: white;
+    color: var(--hero-title-color);
     padding-bottom: 162px;
     padding-top: 80px;
+    background-image: url('/image/hero-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--main-family);
 }
 
 .hero .container {
@@ -66,7 +81,8 @@ header .container {
 .hero-desc {
     font-size: 24px;
     margin-bottom: 78px;
-
+    line-height: 38px;
+    letter-spacing: 0.02em;
 }
 
 .hero-list {
@@ -76,16 +92,15 @@ header .container {
 }
 
 .hero-item:last-child {
-    border: 1px solid white;
+    border: 1px solid var(--hero-title-color);
     padding: 16px 59px;
     border-radius: 30px;
 }
 
 .hero-link {
     font-weight: bold;
-    color: white;
+    color: var(--hero-title-color);
     font-size: 24px;
-    font-family: "Montserrat",sans-serif;
 }
 
 .hero-item:first-child {
@@ -96,44 +111,41 @@ header .container {
 
 .hero-title {
     font-size:58px;
-    font-family: "Montserrat",sans-serif;
     font-weight: bold;
     color: var(--hero-title-color);
     font-size: 50px;
     line-height: 80px;
     letter-spacing: 0.2px;
     padding-bottom: 10px;
+    font-family: var(--second-family);
+    padding-top: 10px;
 }
 
 .hero-subtitle {
     font-size: 24px;
     font-weight: bold;
-    font-family: "Montserrat",sans-serif;
+    line-height: 36px;
+    color: var(--hero-subtitle-color);
 }
 
 .aps-title {
     text-align: center;
     font-size: 44px;
     font-weight: 600;
-    font-family: "Poppins",sans-serif;
+    font-family: var(--second-family);
     padding-bottom: 105px;
 }
 
 .aps {
     padding-top: 56px;
     padding-bottom: 185px;
+    font-family: var(--main-family);
 }
 
 .aps-item {
     padding-left: 60px;
     padding-right: 60px;
 }
-
-
-.aps-list {
-    font-family: "Montserrat",sans-serif;
-}
-
 
 .aps-text {
     color:var(--app-description-color);
@@ -180,29 +192,33 @@ header .container {
     padding-top: 131px;
     padding-bottom: 130px;
     text-align: center;
+    background-image: url('/image/order-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--main-family);
 }
 
 .order-title {
     font-size:40px;
-    font-family: "Montserrat",sans-serif;
     letter-spacing: 0.2px;
     font-weight: bold;
-    color: white;
+    color: var(--hero-title-color);
     padding-bottom: 10px;
 }
 
 .order-desc {
     font-size: 24px;
-    color: white;
+    color: var(--hero-title-color);
     letter-spacing: 0.2px;
     font-weight: 500;
     padding-bottom: 49px;
+    line-height: 38px;
 }
 
 .order-link {
-    color: white;
+    color: var(--hero-title-color);
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .order-item:first-child {
@@ -212,7 +228,7 @@ header .container {
 }
 
 .order-item:last-child {
-    border: 1px solid white;
+    border: 1px solid var(--hero-title-color);
     padding: 16px 45px;
     border-radius: 10px;
 }
@@ -224,17 +240,18 @@ header .container {
 }
 
 .footer {
-    padding-top: 78px;
-    padding-bottom: 27px;
+    padding-top: 114px;
+    padding-bottom: 32px;
+}
+
+footer .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.footer-logo {
-    margin-left: 115px;
-}
-
 .footer-desc {
-    margin-right: 115px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: var(--third-family);
 }
