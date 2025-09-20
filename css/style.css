@@ -169,6 +169,8 @@ header .container {
     font-weight: 700;
     line-height: 57px;
     font-size: 40px;
+    padding-bottom:17px;
+    padding-top:17px;
 }
 
 .aps-item {
