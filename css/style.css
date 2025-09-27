@@ -14,6 +14,7 @@
     --background_last_color:rgba(37, 43, 66, 0.4);
     --background_first_color:rgba(23, 16, 16, 0.6);
     --hero-desc-color:#F6F6F6;
+    --aps-subtitle-color:#252B42;
     --main-family:"Montserrat",sans-serif;
     --second-family:"Poppins",sans-serif;
     --third-family:"Roboto",sans-serif;
@@ -82,7 +83,6 @@ header .container {
 
 
 .hero-desc {
-    font-size: 24px;
     padding-bottom: 54px;
     line-height: 38px;
     letter-spacing: 0.02em;
@@ -103,9 +103,7 @@ header .container {
 }
 
 .hero-link {
-    font-weight: 700;
     color: var(--hero-title-color);
-    font-size: 24px;
 }
 
 .hero-item:first-child {
@@ -116,7 +114,6 @@ header .container {
 
 .hero-title {
     font-size:58px;
-    font-weight: 700;
     color: var(--hero-title-color);
     line-height: 80px;
     letter-spacing: 0.2px;
@@ -126,9 +123,6 @@ header .container {
 }
 
 .hero-subtitle {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
     color: var(--hero-subtitle-color);
 }
 
@@ -154,19 +148,15 @@ header .container {
 .aps-text {
     color:var(--app-description-color);
     font-weight:500;
-    font-size: 24px;
     line-height: 38px;
 }
 
 .aps-desc {
     color: var(--button_background_color);
-    font-size: 24px;
-    font-weight: 700;
 }
 
 .aps-subtitle {
-    color:#252B42;
-    font-weight: 700;
+    color:var(--aps-subtitle-color);
     line-height: 57px;
     font-size: 40px;
     padding-bottom:17px;
@@ -207,14 +197,12 @@ header .container {
 .order-title {
     font-size:40px;
     letter-spacing: 0.2px;
-    font-weight: 700;
     color: var(--hero-title-color);
     padding-bottom: 10px;
     line-height: 57px;
 }
 
 .order-desc {
-    font-size: 24px;
     color: var(--hero-title-color);
     letter-spacing: 0.2px;
     font-weight: 500;
@@ -225,7 +213,6 @@ header .container {
 .order-link {
     color: var(--hero-title-color);
     font-size: 16px;
-    font-weight: 700;
     letter-spacing: 0.2px;
 }
 
@@ -264,6 +251,5 @@ footer .container {
 
 .footer-desc {
     font-size: 12px;
-    font-weight: 700;
     font-family: var(--third-family);
 }
