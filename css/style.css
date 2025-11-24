@@ -96,7 +96,7 @@ header .container {
     justify-content: inherit;
 }
 
-.hero-item:last-child {
+.hero-item:last-child .hero-link {
     border: 1px solid var(--hero-title-color);
     padding: 16px 82px;
     border-radius: 30px;
@@ -106,7 +106,7 @@ header .container {
     color: var(--hero-title-color);
 }
 
-.hero-item:first-child {
+.hero-item:first-child .hero-link {
     background-color: var(--button_background_color);
     padding: 16px 65px;
     border-radius: 30px;
@@ -220,13 +220,13 @@ header .container {
     max-height: 64px; 
 }
 
-.order-item:first-child {
+.order-item:first-child .order-link {
     background-color: var(--button_background_color);
     padding: 12px 31px;
     border-radius: 10px;
 }
 
-.order-item:last-child {
+.order-item:last-child .order-link {
     border: 1px solid var(--hero-title-color);
     padding: 11px 44px;
     border-radius: 10px;
